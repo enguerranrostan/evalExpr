@@ -7,6 +7,9 @@ var result = [];
 var precedenceIndex;
 var stacklength = stack.length;
 
+evalExpr("(23+(3-6))*2+2"); // enter here your expression without spaces
+
+// this function manages operators' precedence
 function precedence(a){
   if(a == "+"){
     precedenceIndex = 2;
@@ -107,7 +110,6 @@ function evalExpr(str){
 
     if(!(output[l] == "+" || output[l] == "-" || output[l] == "*" || output[l] == "/" || output[l] == "%")){
       preOperation[l] = parseInt(output[l]);
-      console.log(preOperation[l])
 
     }else{
 
@@ -172,6 +174,6 @@ function evalExpr(str){
    }
   }
  }
+  console.log(result[0]); // displays the result
 }
 
-evalExpr("(23+(3-6))*2+2");
