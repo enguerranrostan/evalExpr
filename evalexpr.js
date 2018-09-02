@@ -1,10 +1,10 @@
-var output = [];
-var number = [];
 var input = [];
+var number = [];
+var output = [];
 var stack = [];
+var precedenceIndex;
 var preOperation = [];
 var result = [];
-var precedenceIndex;
 var stacklength = stack.length;
 
 evalExpr("(23+(3-6))*2+2"); // enter here your expression without spaces
